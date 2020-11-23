@@ -1,5 +1,5 @@
 <template>
-    <!-- <section class="login-page"> -->
+    <section class="login-page">
         <section id="login-container">
             <div>
                 <h1>Welcome to postIt!</h1>
@@ -32,7 +32,7 @@
                 </form>
             </div>
         </section>
-    <!-- </section> -->
+    </section>
 </template>
 
 <script>
@@ -54,9 +54,9 @@ export default {
 }
 
 #login-container {
-    /* background-image: url(../images/logo.png);
+    background-image: url(../assets/images/logo.png);
     background-size: 20% auto;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-position: 15px 15px;
     min-width: 25%;
     padding: 45px 45px;
@@ -65,22 +65,9 @@ export default {
     text-align: center;
 }
 
+
 #login-container form div > input {
     padding: 8px 16px;
     margin: 4px 0;
 }
-
-/* button {
-    padding: 8px 16px;
-    margin: 4px 0;
-    color: #ffffff;
-    background-color: #01579b;
-    border: none;
-    border-radius: 4px;
-}
-
-button:hover {
-    box-shadow: 0 0 5px rgba(38, 50, 56, 0.7);
-    cursor: pointer;
-} */
 </style>
