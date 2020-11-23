@@ -7,7 +7,7 @@ import Profile from "./models/Profile"
 import Post from "./models/Post"
 import Main from './components/Main.vue'
 import Login from './components/Login.vue'
-
+import Author from "./models/Author"
 
 Vue.config.productionTip = false
 Vue.use(VueRouter);
@@ -16,8 +16,8 @@ Vue.use(Vuex);
 const routes = [
     {path: '/browse', component: Browse},
     { path: '/profiles/:id', name: "profiles", component: Browse },
-    { path: '/main', component: Main },
-    { path: '/login', component: Login}
+    { path: '/main', component: Main},
+    { path: '', component: Login}
 ];
 
 const router = new VueRouter({routes});
@@ -36,6 +36,12 @@ const store = new Vuex.Store({
             new Post(null, "Which weighs more, a pound of feathers or a pound of bricks?"),
             new Post("https://i.pcmag.com/imagery/reviews/00EfzjLJNL6FNKVxviGg7Zw-2.1569473216.fit_scale.size_1182x667.jpg", "Felt cute, might delete later"),
             new Post("https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-screen-close-up-1728-large.mp4", null)
+        ],
+        authors: [
+            new Author("Gordon", "Freeman"),
+            new Author("John", "Doe"),
+            new Author("Bruce", "Wayne"),
+            new Author("Richard", "Stallman")
         ]
     },
     mutations: {
