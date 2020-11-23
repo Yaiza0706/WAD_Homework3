@@ -1,9 +1,9 @@
 <template>
 	<header>
      <nav>
-      <div class="logo-container">
-        <img src="../assets/images/logo.png" alt="postIt">
-    </div>
+      //<div class="logo-container">
+        //<img src="../assets/images/logo.png" alt="postIt">
+    //</div>
     <div class="search-container">
         <input type="text" name="search"><button type="button">Search</button>
     </div>
