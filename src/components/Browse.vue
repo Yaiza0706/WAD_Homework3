@@ -4,7 +4,7 @@
     <section class="main-container">
         <div class="profile" v-for="(profile, index) in profiles" :key="index">
           <img :src="profile.image" :alt="profile.firstname">
-          <h2>{{profile.firstname}} {{profile.lastname}}</h2>
+          <h2>{{profile | name}}</h2>
           <button class="follow-button" @click="likefunction">Follow</button>
         </div>
     </section>
@@ -30,13 +30,20 @@
             button.textContent= 'Followed';
         }
       }
+
     },
 		computed: {
 			profiles: function () {
         return this.$store.state.profiles
       }
-		}
-	}
+		},
+    filters:{
+      name(p){
+        return p.firstname + ' ' + p.lastname;
+      }
+    }
+  }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
