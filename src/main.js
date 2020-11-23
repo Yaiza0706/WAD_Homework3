@@ -6,6 +6,7 @@ import Browse from './components/Browse.vue'
 import Profile from "./models/Profile"
 import Post from "./models/Post"
 import Main from './components/Main.vue'
+import Login from './components/Login.vue'
 
 
 Vue.config.productionTip = false
@@ -16,6 +17,7 @@ const routes = [
     {path: '/browse', component: Browse},
     { path: '/profiles/:id', name: "profiles", component: Browse },
     { path: '/main', component: Main },
+    { path: '/login', component: Login}
 ];
 
 const router = new VueRouter({routes});
