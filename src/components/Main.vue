@@ -94,38 +94,4 @@
 .post .post-title ~ .post-actions {
     padding: 10px;
 }
-
-<<<<<<< HEAD
-.like-button {
-    background-image: url(like.png);
-    background-size: 15px;
-    background-repeat: no-repeat;
-    background-position: 5px center;
-    background-color: #8a8a8a;
-    width: 60px;
-    height: 25px;
-    padding-left: 23px;
-    line-height: 10px;
-    text-align: left;
-    border: none;
-}
-=======
-    .like-button {
-        background-image: url(../assets/images/like.png);;
-        background-size: 15px;
-        background-repeat: no-repeat;
-        background-position: 5px center;
-        background-color: #8a8a8a;
-        width: 60px;
-        height: 25px;
-        padding-left: 23px;
-        line-height: 10px;
-        text-align: left;
-        border: none;
-    }
->>>>>>> bf3f97b89c88f6b7df06e0804f604980785c8d04
-
-.like-button.liked {
-    background-color: #01579b;
-}
 </style>

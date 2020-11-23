@@ -16,13 +16,8 @@ Vue.use(Vuex);
 const routes = [
     {path: '/browse', component: Browse},
     { path: '/profiles/:id', name: "profiles", component: Browse },
-<<<<<<< HEAD
-    { path: '/main', component: Main},
-    { path: '', component: Login}
-=======
     { path: '/main', component: Main },
     { path: '/', component: Login}
->>>>>>> bf3f97b89c88f6b7df06e0804f604980785c8d04
 ];
 
 const router = new VueRouter({routes});
