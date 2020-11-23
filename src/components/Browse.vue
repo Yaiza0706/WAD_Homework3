@@ -5,7 +5,7 @@
         <div class="profile" v-for="(profile, index) in profiles" :key="index">
           <img :src="profile.image" :alt="profile.firstname">
           <h2>{{profile.firstname}} {{profile.lastname}}</h2>
-          <button class="follow-button">Follow</button>
+          <button class="follow-button" @click="likefunction">Follow</button>
         </div>
     </section>
   </section>
@@ -17,6 +17,19 @@
 		name: 'Browse',
     components:{
       Header,
+    },
+    methods:{
+
+      likefunction: function(event){
+        let button=event.target;
+        if(button.classList.contains('followed')){
+          button.classList.remove('followed')
+          button.textContent='Follow';
+        } else{
+            button.classList.add('followed')
+            button.textContent= 'Followed';
+        }
+      }
     },
 		computed: {
 			profiles: function () {
