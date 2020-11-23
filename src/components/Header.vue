@@ -8,7 +8,7 @@
         <input type="text" name="search"><button type="button">Search</button>
     </div>
     <div class="avatar-container">
-        <img class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+        <img @click="$router.push('/browse')" class="avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
         <div class="drop-down-container">
          <span id="user-name">John Doe</span>
          <span id="user-email"></span>
