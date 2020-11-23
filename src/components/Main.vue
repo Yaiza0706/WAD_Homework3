@@ -90,7 +90,7 @@
     }
 
     .like-button {
-        background-image: url(../images/like.png);
+        background-image: url(like.png);
         background-size: 15px;
         background-repeat: no-repeat;
         background-position: 5px center;
