@@ -1,9 +1,6 @@
 <template>
-  <!-- <div id="app">
-    <router-view></router-view>
-  </div> -->
+  <div id="app">
     <section class="login-page">
-        <!-- <router-view></router-view> -->
         <section id="login-container">
             <div>
                 <h1>Welcome to postIt!</h1>
@@ -18,7 +15,7 @@
             </div>
             <div>
                 <h3>Please Log In</h3>
-                <form action="index.html" method="post">
+                <form>
                     <div>
                         <input type="text" name="email" placeholder="Email">
                     </div>
@@ -26,7 +23,7 @@
                         <input type="password" name="password" placeholder="Password">
                     </div>
                     <div>
-                        <button class="button" type="submit" name="login">Log In</button>
+                          <button @click="$router.push('/main')">Log In</button>
                     </div>
                     <div>
                         <small>
@@ -37,14 +34,14 @@
             </div>
         </section>
     </section>
+    <router-view></router-view>
+  </div>
+    
 </template>
 
 <script>
 export default {
     name: 'App',
-    computed: {
-
-    }
 }
 </script>
 

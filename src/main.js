@@ -14,8 +14,13 @@ Vue.use(Vuex);
 
 const routes = [
     {path: '/browse', component: Browse},
+<<<<<<< HEAD
     {path: '/profiles/:id', name: "profiles", component: Browse },
     { path: '/main', name: "posts", component: Main },
+=======
+    { path: '/profiles/:id', name: "profiles", component: Browse },
+    { path: '/main', component: Main },
+>>>>>>> d2b56be0aa185d75d0780fb152afccbca09387d2
 ];
 
 const router = new VueRouter({routes});
