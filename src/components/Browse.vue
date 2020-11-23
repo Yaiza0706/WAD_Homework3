@@ -21,7 +21,7 @@
 		computed: {
 			profiles: function () {
         return this.$store.state.profiles
-      }
+        }
 		}
 	}
 </script>
