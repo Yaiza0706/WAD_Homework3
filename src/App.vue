@@ -6,16 +6,9 @@
 
 
 <script>
-<<<<<<< HEAD
-export default {
+    export default {
     name: 'App',
  }
-=======
-
-    export default {
-    name: 'App'
-    }
->>>>>>> bf3f97b89c88f6b7df06e0804f604980785c8d04
 </script>
 
 

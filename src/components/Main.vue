@@ -1,14 +1,17 @@
 <template>
     <section>
         <Header></Header>
-        <section class="post">
-            <div class="post-image" v-for="(post, index) in posts" :key="index">
-                <img :src="post.source" :alt="post.description">
+        <section class="main-container">
+        <section class="post" v-for="(post, index) in posts" :key="index">
+            <div class="post-author" >
+                <h4>{{post.author.firstname}} {{post.author.lastname}}</h4>
+            </div>
+            <div class="post-image">
+                <img :src="post.source">
                 <h3>{{post.description}}</h3>
             </div>
-            <div class="post-author" v-for="(author, index) in posts" :key="index">
-                <h4>{{author.firstname}} {{author.lastname}}</h4>
-            </div>
+
+        </section>
         </section>
     </section>
 
@@ -23,9 +26,6 @@
         computed: {
             posts: function () {
                 return this.$store.state.posts
-            },
-            authors: function() {
-                return this.$store.state.authors
             }
         }
     }
@@ -95,24 +95,9 @@
     padding: 10px;
 }
 
-<<<<<<< HEAD
 .like-button {
-    background-image: url(like.png);
+    background-image: url(../assets/images/like.png);;
     background-size: 15px;
-    background-repeat: no-repeat;
-    background-position: 5px center;
-    background-color: #8a8a8a;
-    width: 60px;
-    height: 25px;
-    padding-left: 23px;
-    line-height: 10px;
-    text-align: left;
-    border: none;
-}
-=======
-    .like-button {
-        background-image: url(../assets/images/like.png);;
-        background-size: 15px;
         background-repeat: no-repeat;
         background-position: 5px center;
         background-color: #8a8a8a;
@@ -123,7 +108,6 @@
         text-align: left;
         border: none;
     }
->>>>>>> bf3f97b89c88f6b7df06e0804f604980785c8d04
 
 .like-button.liked {
     background-color: #01579b;
