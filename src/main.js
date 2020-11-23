@@ -32,10 +32,10 @@ const store = new Vuex.Store({
             new Profile("Richard", "Stallman","https://images.unsplash.com/photo-1553798194-cc0213ae7f99?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80")
         ],
         posts: [
-            new Post("http://www.pastatdude.com/uploaded_images/hl2-2007-10-20-16-36-36-32-713089.jpg", "I think it's going to rain", new Author("Gordon", "Freeman")),
-            new Post("", "Which weighs more, a pound of feathers or a pound of bricks?", new Author("John", "Doe")),
-            new Post("https://i.pcmag.com/imagery/reviews/00EfzjLJNL6FNKVxviGg7Zw-2.1569473216.fit_scale.size_1182x667.jpg", "Felt cute, might delete later", new Author("Bruce", "Wayne")),
-            new Post("https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-screen-close-up-1728-large.mp4", "", new Author("Richard", "Stallman"))
+            new Post("http://www.pastatdude.com/uploaded_images/hl2-2007-10-20-16-36-36-32-713089.jpg", "I think it's going to rain", new Author("Gordon", "Freeman"), "15k"),
+            new Post("", "Which weighs more, a pound of feathers or a pound of bricks?", new Author("John", "Doe"), "25k"),
+            new Post("https://i.pcmag.com/imagery/reviews/00EfzjLJNL6FNKVxviGg7Zw-2.1569473216.fit_scale.size_1182x667.jpg", "Felt cute, might delete later", new Author("Bruce", "Wayne"), "100k"),
+            new Post("https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-screen-close-up-1728-large.mp4", "", new Author("Richard", "Stallman"), "1k")
         ],
     },
     mutations: {

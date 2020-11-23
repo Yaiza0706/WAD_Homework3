@@ -9,8 +9,8 @@
             <div class="post-image">
                 <img :src="post.source">
                 <h3>{{post.description}}</h3>
+                <button class="like-button">{{post.likes}}</button>
             </div>
-
         </section>
         </section>
     </section>
@@ -96,17 +96,17 @@
 }
 
 .like-button {
-    background-image: url(../assets/images/like.png);;
+    background-image: url(../assets/images/like.png);
     background-size: 15px;
-        background-repeat: no-repeat;
-        background-position: 5px center;
-        background-color: #8a8a8a;
-        width: 60px;
-        height: 25px;
-        padding-left: 23px;
-        line-height: 10px;
-        text-align: left;
-        border: none;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-color: #8a8a8a;
+    width: 60px;
+    height: 25px;
+    padding-left: 23px;
+    line-height: 10px;
+    text-align: left;
+    border: none;
     }
 
 .like-button.liked {
